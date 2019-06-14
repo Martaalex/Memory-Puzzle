@@ -1,0 +1,133 @@
+body{
+  margin: 0;
+        .container{
+        background-color:#3e4444;
+		   font-family:'Handlee', cursive;
+    	color: #b2b2b2 ;
+       font-size: 20px;
+       height: -webkit-fill-available;
+       text-align: center;
+    position: relative;
+
+  
+       header{
+display:flex;
+    align-items: center; /* Vertical center alignment */
+    justify-content: center; /* Horizontal center alignment */
+  
+    h1  {
+     
+	background: linear-gradient(90deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+     background-clip: text;
+      background-size: 400% 400%;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 60px;
+  letter-spacing: 5px;
+          animation: Gradient 20s ease-in-out infinite;
+     margin: 30px 0 0 0;
+
+      @keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+        
+}
+      
+}
+}
+ main{
+   text-align: center;
+   .scoreTable{
+display: flex;
+justify-content: space-evenly;
+
+#score{
+  margin:30px 0;
+  letter-spacing: 2px;
+ font-family:  'Courier New', Courier, monospace;
+}
+#moves{
+  margin:30px 0;
+  letter-spacing: 2px;
+  font-family: 'Courier New', Courier, monospace;
+}
+   }
+#board
+{
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+  text-align: center;
+  color:  #cac0b3;
+
+    .btnA{
+   width: 125px;
+   height: 125px;
+   display: inline-block;
+   margin: 3px;
+   background-image: url("img/card.png");
+   border: 2px solid #f7d97a;
+   border-radius: 4px;
+   cursor: default;
+   transition: 0.5s ease-in;
+   filter: brightness(100%);
+  
+ }
+ .btn{
+   width: 125px;
+   height: 125px;
+   display: inline-block;
+   margin: 3px;
+   background-image: url("img/card.png");
+   border: 2px solid #cac0b3;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: 0.5s ease-in;
+   filter: brightness(70%);
+  
+ }
+
+  .btn:hover{
+ border:2px solid #f7d97a;
+ transition: 0.5s ease-out;
+ filter:brightness(100%);
+   }
+
+}
+ }
+
+footer {
+  display: flex;
+  justify-content:space-evenly;
+   background :   #ada3978a; 
+  position: fixed;
+  left: 0;
+  bottom: 30px;
+  width: 100%;
+  color:#3e4444;
+  text-align: center;
+  padding: 10px;
+  
+a:link    { color:#3e4444; text-decoration: none; }
+a:visited { color:#3e4444; }
+a:active  { color:#3e4444; }
+a:hover   { color: rgb(233, 233, 233); }
+}
+
+p{
+  font-family: 'Courier New', Courier, monospace;
+      position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+    right: 40%;
+
+}
+      }
+}
